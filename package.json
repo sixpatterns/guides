@@ -1,0 +1,7 @@
+{
+  "name": "guides",
+  "version": "0.0.0",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}
