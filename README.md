@@ -13,6 +13,13 @@
 
 - [Communication & Culture](/docs/culture/communication.md)
 
+### Software development
+
+- [Philosophy](/docs/software-development/philosophy.md)
+- [Tech stack & setup](/docs/software-development/tech-stack-and-setup.md)
+- [Workflow & Git](/docs/software-development/workflow.md)
+- [Languages](/docs/software-development/languages.md)
+
 ## References
 
 - [thoughtbot/guides](https://github.com/thoughtbot/guides)
