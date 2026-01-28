@@ -84,4 +84,6 @@ at a big company.
 - Add explicit `null` value to field. Be clear about what can be null.
 - Set `null: false` for most fields (match your database)
 - Use `@include(if: $includePosts)` when fetching associations to avoid loading
-  too much data everywhere the query is used.
+  too much data everywhere the query is used. Checkout
+  [blog post](https://www.sixpatterns.com/blog/avoid-overfetching-with-graphql-include-directive)
+  for a practical example.
