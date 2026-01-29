@@ -23,7 +23,7 @@
   it fast?
 - Do not write code for features we _might_ need in the future. Solve the
   problem we have today.
-- Be Consistent:
+- Be consistent:
   - Copy existing patterns. If you are building a form, look at other forms in
     the app first.
   - Use the same words everywhere (e.g., if we say "Add user" in one place,

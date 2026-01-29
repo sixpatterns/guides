@@ -26,5 +26,6 @@ We use specific tools for specific jobs:
 
 ## Settings
 
-Add [this](https://gist.github.com/vivekmiyani/c5bb0ebebb572495605323d217e50ee1)
+Add
+[these](https://gist.github.com/vivekmiyani/c5bb0ebebb572495605323d217e50ee1)
 settings to VSCode.
