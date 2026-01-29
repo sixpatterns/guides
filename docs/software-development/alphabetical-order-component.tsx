@@ -3,6 +3,7 @@ export const Orders = () => {
   const [query, setQuery] = useState("");
   const [statuses, setStatuses] = useState(["shipped"]);
 
+  const customers = useCustomers();
   const orders = useOrders();
   const users = useUsers();
 
