@@ -1,41 +1,39 @@
 # Languages
 
+## General
+
+- Alphabetical order: Sort most items alphabetically within their groups (e.g.,
+  `useState` lists, Rails associations, GraphQL fields, GraphQL queries and
+  mutations hooks). [Model example](alphabetical-order-model.rb),
+  [React component example](alphabetical-order-component.tsx).
+- Logical grouping: Group similar code constructs together (e.g., all `useMemo`
+  hooks together, all Rails validations, associations, callbacks together).
+- Spacing: Separate distinct groups with a single blank line to improve
+  scannability.
+
 ## Javascript/Typescript and React
 
 - Prefer arrow functions.
 - Use TypeScript for everything.
 - Prefer GraphQL using
   [Tanstack query](https://tanstack.com/query/latest/docs/framework/react/graphql)
+- Use `npx knip` to remove unused code.
 
 ## Rails
 
-- Prefer GraphQL
-- Avoid monkey-patching
+- Prefer GraphQL.
+- Avoid monkey-patching.
 
 ### Models
 
 - Group code by type. Put associations first, then validations, then callbacks.
   Sort them alphabetically. Put a blank line between groups.
-
-  ```ruby
-  class Order < ApplicationRecord
-    belongs_to :customer
-
-    has_many :order_items
-
-    validates :amount, presence: true
-    validates :discount, presence: true
-    validates :tax, presence: true
-
-    after_create_commit :notify_customer
-  end
-  ```
-
+  [Example](alphabetical-order-model.rb).
 - Don't write SQL fragments (like `where('id IS NOT NULL')`) outside of models.
 
 ### Database and migrations
 
-- Keep `db/schema.rb` under version control and sync with your feature branch
+- Keep `db/schema.rb` under version control and in sync with your feature branch
   code.
 - Use `db/seeds.rb` for data that is required to start fresh environment.
 - Avoid `default` values unless you really need them (Booleans usually need

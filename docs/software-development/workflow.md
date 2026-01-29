@@ -3,7 +3,7 @@
 Every task follows this path on our board:
 
 1.  **Todo:** Task is waiting to be picked up.
-2.  **In Progress:** You are actively working on it.
+2.  **In progress:** You are actively working on it.
 3.  **In code review:** PR is open. You are waiting for feedback.
 4.  **In QA (Staging):** Merged to staging. Ready for testing.
 5.  **Ready for production:** Passed QA. Waiting for deployment.
