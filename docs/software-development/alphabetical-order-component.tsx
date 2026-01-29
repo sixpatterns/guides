@@ -7,8 +7,8 @@ export const Orders = () => {
   const users = useUsers();
 
   const orderCreate = useOrderCreate();
-  const orderUpdate = useOrderUpdate();
   const orderDelete = useOrderDelete();
+  const orderUpdate = useOrderUpdate();
 
   // ...
 };
