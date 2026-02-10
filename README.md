@@ -6,10 +6,10 @@ Guides for building software, communicating clearly, and working together.
   reasoning behind every point. If you have doubts, ask.
 - Take your time: You don't need to memorize this in one day. Check it daily
   until you know it well.
-- We welcome changes! If you find something old or have a better idea, open an
-  Issue or a Pull Request.
 - Please note that this guide can be updated any time, and it's up to you to
   stay up to date.
+- We welcome changes! If you find something old or have a better idea, open an
+  Issue or a Pull Request.
 
 ## Table of contents
 
