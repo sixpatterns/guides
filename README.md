@@ -1,9 +1,13 @@
 # Guides
 
-- Don't blindly read this guide, Understand the reasoning behind every point. If
-  you have doubts, ask.
-- You don't need to memorize this in one day. Check it daily until you know it
-  well.
+Guides for building software, communicating clearly, and working together.
+
+- Understand the "Why": Don't just follow these guides blindly. Understand the
+  reasoning behind every point. If you have doubts, ask.
+- Take your time: You don't need to memorize this in one day. Check it daily
+  until you know it well.
+- Please note that this guide can be updated any time, and it's up to you to
+  stay up to date.
 - We welcome changes! If you find something old or have a better idea, open an
   Issue or a Pull Request.
 
@@ -20,7 +24,12 @@
 - [Workflow & Git](/docs/software-development/workflow.md)
 - [Languages](/docs/software-development/languages.md)
 
-## References
+## Credits & inspiration
 
 - [thoughtbot/guides](https://github.com/thoughtbot/guides)
 - [thoughtbot playbook](https://thoughtbot.com/playbook)
+
+## Further reading
+
+- [Rails style guide](https://github.com/rubocop/rails-style-guide)
+- [Ruby style guide](https://github.com/rubocop/ruby-style-guide)

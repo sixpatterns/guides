@@ -42,8 +42,8 @@
   - Why? If `amount` is nullable, you have to check for `nil` every time you do
     math. That is messy.
   - When adding a new column to an existing table, avoid setting a `default`
-    value. Instead, fill existing entries and use `change_null` to mark the
-    column as `NOT NULL`.
+    value. Instead, mark column as `NOT NULL` and fill existing column using
+    `change_null`.
 - Never change a migration file after it is merged to `main`. Create a new
   migration instead.
 - Don't use `ActiveRecord` models in migration. Models change over time, which
