@@ -18,6 +18,9 @@
 - Prefer GraphQL using
   [Tanstack query](https://tanstack.com/query/latest/docs/framework/react/graphql)
 - Use `npx knip` to remove unused code.
+- Avoid using `useEffect` whenever possible (read
+  [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)).
+  If it is absolutely necessary, extract it and move it to a custom hooks file.
 
 ## Rails
 
