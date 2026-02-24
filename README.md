@@ -23,6 +23,10 @@ Guides for building software, communicating clearly, and working together.
 - [Tech stack & setup](/docs/software-development/tech-stack-and-setup.md)
 - [Workflow & Git](/docs/software-development/workflow.md)
 - [Languages](/docs/software-development/languages.md)
+- [Learning](/docs/software-development/learning.md)
+
+#### Automated reviews
+
 - [BUGBOT template](/docs/software-development/bugbot-template.md)
 
 ## Credits & inspiration
