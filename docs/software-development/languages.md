@@ -65,23 +65,6 @@
 
 ## GraphQL
 
-### Learning
-
-- [Official docs](https://graphql.org/learn/introduction/)
-
-### Public GraphQL APIs
-
-Publicly available GraphQL APIs allowing you to explore how GraphQL can be used
-at a big company.
-
-- [Shopify GraphQL admin APIs](https://shopify.dev/docs/api/admin-graphql/latest)
-
-### Tools
-
-- [Bruno](https://www.usebruno.com/) - HTTP client with GraphQL support
-
-### Best practices
-
 - Add explicit `null` value to field. Be clear about what can be null.
 - Set `null: false` for most fields (match your database)
 - Use `@include(if: $includePosts)` when fetching associations to avoid loading
