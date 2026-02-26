@@ -65,9 +65,12 @@
 
 ## GraphQL
 
-### Learning
-
-- [Official docs](https://graphql.org/learn/introduction/)
+- Add explicit `null` value to field. Be clear about what can be null.
+- Set `null: false` for most fields (match your database)
+- Use `@include(if: $includePosts)` when fetching associations to avoid loading
+  too much data everywhere the query is used. Checkout
+  [blog post](https://www.sixpatterns.com/blog/avoid-overfetching-with-graphql-include-directive)
+  for a practical example.
 
 ### Public GraphQL APIs
 
@@ -79,12 +82,3 @@ at a big company.
 ### Tools
 
 - [Bruno](https://www.usebruno.com/) - HTTP client with GraphQL support
-
-### Best practices
-
-- Add explicit `null` value to field. Be clear about what can be null.
-- Set `null: false` for most fields (match your database)
-- Use `@include(if: $includePosts)` when fetching associations to avoid loading
-  too much data everywhere the query is used. Checkout
-  [blog post](https://www.sixpatterns.com/blog/avoid-overfetching-with-graphql-include-directive)
-  for a practical example.
