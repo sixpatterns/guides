@@ -71,3 +71,14 @@
   too much data everywhere the query is used. Checkout
   [blog post](https://www.sixpatterns.com/blog/avoid-overfetching-with-graphql-include-directive)
   for a practical example.
+
+### Public GraphQL APIs
+
+Publicly available GraphQL APIs allowing you to explore how GraphQL can be used
+at a big company.
+
+- [Shopify GraphQL admin APIs](https://shopify.dev/docs/api/admin-graphql/latest)
+
+### Tools
+
+- [Bruno](https://www.usebruno.com/) - HTTP client with GraphQL support
