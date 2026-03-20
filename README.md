@@ -29,12 +29,12 @@ Guides for building software, communicating clearly, and working together.
 
 - [BUGBOT template](/docs/software-development/bugbot-template.md)
 
-## Credits & inspiration
-
-- [thoughtbot/guides](https://github.com/thoughtbot/guides)
-- [thoughtbot playbook](https://thoughtbot.com/playbook)
-
 ## Further reading
 
 - [Rails style guide](https://github.com/rubocop/rails-style-guide)
 - [Ruby style guide](https://github.com/rubocop/ruby-style-guide)
+
+## Credits & inspiration
+
+- [thoughtbot/guides](https://github.com/thoughtbot/guides)
+- [thoughtbot playbook](https://thoughtbot.com/playbook)

@@ -21,6 +21,8 @@
 - Avoid using `useEffect` whenever possible (read
   [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)).
   If it is absolutely necessary, extract it and move it to a custom hooks file.
+- Tailwind CSS: Apply classes directly on the exact element being styled, rather
+  than from a parent container.
 
 ## Rails
 
