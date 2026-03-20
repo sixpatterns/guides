@@ -10,6 +10,8 @@
   hooks together, all Rails validations, associations, callbacks together).
 - Spacing: Separate distinct groups with a single blank line to improve
   scannability.
+- Prefer framework defaults (Rails, Next.js, Tailwind, Vite, etc.). Customize
+  only when there is a clear need.
 
 ## Javascript/Typescript and React
 
@@ -28,6 +30,13 @@
 
 - Prefer GraphQL.
 - Avoid monkey-patching.
+
+### Controllers
+
+- DHH encourages limiting controllers to the standard CRUD actions (index, show,
+  new, edit, create, update, destroy). When a controller starts handling more
+  than these, it is a signal to split it into a separate controller. (See
+  [resource pattern](https://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/))
 
 ### Models
 
