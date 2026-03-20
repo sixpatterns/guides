@@ -18,7 +18,8 @@
 
 - Do not copy-paste code you do not understand.
 - Keep code simple and easy to understand.
-- Avoid over engineering
+- Write less code and achieve more in less code. Less code = easier to maintain.
+- Avoid over engineering.
 - Just because code runs doesn't mean it is good. Is it easy to change later? Is
   it fast?
 - Do not write code for features we _might_ need in the future. Solve the

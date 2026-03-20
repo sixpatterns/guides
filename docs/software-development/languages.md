@@ -10,6 +10,8 @@
   hooks together, all Rails validations, associations, callbacks together).
 - Spacing: Separate distinct groups with a single blank line to improve
   scannability.
+- Prefer framework defaults (Rails, Next.js, Tailwind, Vite, etc.). Customize
+  only when there is a clear need.
 
 ## Javascript/Typescript and React
 
