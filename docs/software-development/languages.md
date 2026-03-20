@@ -31,6 +31,12 @@
 - Prefer GraphQL.
 - Avoid monkey-patching.
 
+### Controllers
+
+- Follow the
+  [resource pattern](https://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/):
+  Keep controllers close to default scaffolds.
+
 ### Models
 
 - Group code by type. Put associations first, then validations, then callbacks.
