@@ -33,9 +33,10 @@
 
 ### Controllers
 
-- Follow the
-  [resource pattern](https://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/):
-  Keep controllers close to default scaffolds.
+- DHH encourages limiting controllers to the standard CRUD actions (index, show,
+  new, edit, create, update, destroy). When a controller starts handling more
+  than these, it is a signal to split it into a separate controller. (See
+  [resource pattern](https://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/))
 
 ### Models
 
