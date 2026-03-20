@@ -19,6 +19,8 @@
 - Prefer arrow functions.
 - Prefer GraphQL using Tanstack Query.
 - Avoid useEffect. If unavoidable, extract it to a custom hook file.
+- Tailwind CSS: Apply classes directly on the exact element being styled, rather
+  than from a parent container.
 
 ### Ruby on Rails
 

@@ -21,6 +21,8 @@
 - Avoid using `useEffect` whenever possible (read
   [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)).
   If it is absolutely necessary, extract it and move it to a custom hooks file.
+- Tailwind CSS: Apply classes directly on the exact element being styled, rather
+  than from a parent container.
 
 ## Rails
 
@@ -53,6 +55,12 @@
   breaks old migrations.
 - Always use an `ORDER BY` clause if displaying a list to a user. Postgres does
   not guarantee order without it.
+
+### Mailers
+
+- Use mailer previews to test emails locally.
+- For staging environments, route all recipients to sandbox addresses (see
+  [Stop sending emails to real customers](https://www.sixpatterns.com/blog/stop-sending-emails-to-real-customers)).
 
 ### Tests
 
