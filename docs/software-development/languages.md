@@ -31,12 +31,12 @@
 - Prefer GraphQL.
 - Avoid monkey-patching.
 
-### Controllers
+### Controllers & queries and mutations
 
 - DHH encourages limiting controllers to the standard CRUD actions (index, show,
   new, edit, create, update, destroy). When a controller starts handling more
-  than these, it is a signal to split it into a separate controller. (See
-  [resource pattern](https://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/))
+  than these, it is a signal to split it into a separate controller. (see
+  [resource pattern](https://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/)).
 
 ### Models
 
@@ -50,8 +50,8 @@
 - Keep `db/schema.rb` under version control and in sync with your feature branch
   code.
 - Use `db/seeds.rb` for data that is required to start fresh environment.
-- Avoid `default` values unless you really need them (Booleans usually need
-  defaults).
+- Avoid column `default` values unless you really need them (Booleans usually
+  need defaults).
 - Constrain most columns as `NOT NULL`
   - Why? If `amount` is nullable, you have to check for `nil` every time you do
     math. That is messy.
