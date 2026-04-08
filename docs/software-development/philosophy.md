@@ -32,4 +32,6 @@
 - Use empty lines to group related and similar code. This makes it easier to
   read.
 - Avoid shortcuts: Do it the right way, not the fast way.
-- Break large tickets into smaller PRs (avoid changing 50+ files at once).
+- Break large tickets into bite-sized sub-tasks, then open smaller PRs for each
+  sub-task (avoid changing 50+ files at once). Small PRs are easier to review,
+  test, and merge safely.

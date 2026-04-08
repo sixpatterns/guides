@@ -29,6 +29,13 @@
 - Prefer GraphQL.
 - Avoid monkey-patching.
 
+#### Controllers & queries and mutations
+
+- DHH encourages limiting controllers to the standard CRUD actions (index, show,
+  new, edit, create, update, destroy). When a controller starts handling more
+  than these, it is a signal to split it into a separate controller. (see
+  [resource pattern](https://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/)).
+
 #### Models
 
 - Group code by type. Put associations first, then validations, then callbacks.
@@ -37,8 +44,8 @@
 
 #### Database and migrations
 
-- Avoid `default` values unless you really need them (Booleans usually need
-  defaults).
+- Avoid column `default` values unless you really need them (Booleans usually
+  need defaults).
 - Constrain most columns as `NOT NULL`
   - When adding a new column to an existing table, avoid setting a `default`
     value. Instead, fill existing entries using `change_null`.
