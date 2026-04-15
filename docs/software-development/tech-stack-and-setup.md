@@ -14,15 +14,19 @@ We use specific tools for specific jobs:
 
 ## Extensions
 
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- GraphQL LSP
-- Prettier
-- [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
-- Ruby LSP
-- [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+Run the following commands to install extensions:
+
+```sh
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension GraphQL.vscode-graphql
+code --install-extension esbenp.prettier-vscode
+code --install-extension yoavbls.pretty-ts-errors
+code --install-extension Shopify.ruby-lsp
+code --install-extension Tyriar.sort-lines
+code --install-extension bradlc.vscode-tailwindcss
+```
 
 ## Settings
 
