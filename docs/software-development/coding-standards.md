@@ -35,6 +35,8 @@
 ## TypeScript & React
 
 - Prefer arrow functions.
+- Prefer named exports over `export default`.
+- Prefer `type` over `interface`.
 - Use TypeScript for everything.
 - Avoid type declarations that can be inferred automatically by TypeScript
   (e.g., prefer `users.map(user => user.name)` over
@@ -46,10 +48,6 @@
   [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)).
 - Tailwind CSS: Apply classes directly on the exact element being styled, rather
   than from a parent container.
-
-### Ant Design
-
-- Avoid using `dataIndex` in table columns; prefer `render` functions instead.
 
 ## Ruby on Rails
 
@@ -95,6 +93,9 @@
   breaks old migrations.
 - Always use an `ORDER BY` clause if displaying a list to a user. Postgres does
   not guarantee order without it.
+- When adding or removing a database column, update all related layers: model
+  validations, GraphQL types, GraphQL attributes, factories, and test
+  assertions.
 
 ### Mailers
 
@@ -127,6 +128,8 @@
   1. Column-backed attributes
   2. Association fields
   3. Derived fields (custom methods) [Example](graphql-type-ordering.rb).
+- When a field returns an association or collection, add `scope:` to ensure only
+  authorized data is returned and `preload:` to avoid N+1 queries.
 
 ### Public GraphQL APIs
 
