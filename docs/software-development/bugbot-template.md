@@ -21,10 +21,17 @@
   scannability.
 - Alphabetical order: Sort items alphabetically within their groups (e.g.,
   `useState` lists, Rails associations, GraphQL fields).
+- When adding a new environment variable, add it to the `.env.example` file.
+- Disallow `TODO` comments.
+- When deleting code, trace and delete all usages recursively. Each removal may
+  expose more dead code.
 
 ## TypeScript & React
 
 - Prefer arrow functions.
+- Prefer named exports over `export default`.
+- Prefer `type` over `interface`.
+- Avoid optional chaining (`?.`) when the value is never `null` or `undefined`.
 - Avoid type declarations that can be inferred automatically by TypeScript
   (e.g., prefer `users.map(user => user.name)` over
   `users.map((user: User) => ...)`).
@@ -36,11 +43,16 @@
 ### Ant Design
 
 - Avoid using `dataIndex` in table columns; prefer `render` functions instead.
+- When using `Form.useForm` inside a drawer or modal, control rendering with a
+  `destroyed` flag to ensure the form unmounts properly.
+- When using `DatePicker` or `TimePicker`, always pass `format`,
+  `getValueProps`, and `getValueFromEvent`.
 
 ## Ruby on Rails
 
 - Prefer GraphQL.
 - Avoid monkey-patching.
+- Avoid using safe navigation (`&.`) unless the value can actually be `nil`.
 
 ### Controllers & queries and mutations
 
@@ -61,6 +73,9 @@
   6. Public methods
   7. Private methods
 - Don't write SQL fragments (like `where('id IS NOT NULL')`) outside of models.
+- When adding `has_many` or `has_one`, define the matching `belongs_to` in the
+  associated model. When adding `belongs_to`, define the matching `has_many` or
+  `has_one` in the parent model.
 
 ### Database and migrations
 
@@ -71,6 +86,9 @@
     value. Instead, fill existing entries using `change_null`.
 - Don't use `ActiveRecord` models in migration.
 - Use an `ORDER BY` clause if displaying a list to a user.
+- When adding or removing a database column, update all related layers: model
+  validations, GraphQL types, GraphQL attributes, factories, and test
+  assertions.
 
 ### Tests
 
@@ -88,6 +106,8 @@
 
 - Add explicit `null` value to field.
 - Always set `null: false` unless the database explicitly allows `NULL`.
+- When a field or argument represents an ID, use the `ID` type instead of
+  `String` or `Integer`.
 - If fetching associations in a query, use `@include` directive to avoid
   over-fetching.
 - Field ordering in types: Group fields by category, separated by blank lines,
@@ -95,3 +115,5 @@
   1. Column-backed attributes
   2. Association fields
   3. Derived fields (custom methods)
+- When a field returns an association or collection, add `scope:` to ensure only
+  authorized data is returned and `preload:` to avoid N+1 queries.
