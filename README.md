@@ -24,9 +24,9 @@ Guides for building software, communicating clearly, and working together.
 - [Coding standards](/docs/software-development/coding-standards.md)
 - [Learning](/docs/software-development/learning.md)
 
-#### Automated reviews
+#### AI
 
-- [BUGBOT template](/docs/software-development/bugbot-template.md)
+- [AGENTS.md](/docs/software-development/agents.md)
 
 ## Further reading
 
