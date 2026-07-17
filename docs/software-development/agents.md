@@ -43,8 +43,8 @@
 ### Ant Design
 
 - Avoid using `dataIndex` in table columns; prefer `render` functions instead.
-- When using `Form.useForm` inside a drawer or modal, pass `clearOnDestroy` to
-  the Form so old values are cleared on close.
+- When using `Form.useForm` inside a drawer or modal, control rendering with a
+  `destroyed` flag to ensure the form unmounts properly.
 - When using `DatePicker` or `TimePicker`, always pass `format`,
   `getValueProps`, and `getValueFromEvent`.
 
