@@ -93,9 +93,8 @@
 ### Tests
 
 - Use minitest.
-- Write request tests for queries and mutations.
 - When frontend is maintained within the same codebase as the backend, write
-  system tests.
+  system tests. Otherwise, write request tests.
 - Use `mocha` to mock third-party APIs.
 - Avoid using instance variables in tests.
 - Keep tests minimal: When using a factory in a test, only pass attributes the
