@@ -106,9 +106,8 @@
 ### Tests
 
 - Use minitest (Rails default) over rspec.
-- Write request tests for queries and mutations.
-- When frontend is maintained within the same codebase as the backend, write
-  system tests.
+- When frontend is maintained within the same codebase as the backend, prefer
+  system tests. Otherwise, write request tests.
 - Use `mocha` to mock third-party APIs (like Stripe or Twilio).
 - Avoid using instance variables in tests.
 - Keep tests minimal: When using a factory in a test, only pass attributes the
